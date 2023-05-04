@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Reaction, Button } from './FeedbackOptions.styled';
+import { Reaction, Button, Span } from './FeedbackOptions.styled';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
@@ -9,7 +9,9 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
                 <Button
                     key={reaction}
                     onClick={() => onLeaveFeedback(reaction)}>
-                    {reaction}
+                    <Span>
+                        {reaction}
+                    </Span>
                 </Button>
             ))}
         </Reaction>

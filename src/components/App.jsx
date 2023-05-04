@@ -43,13 +43,13 @@ class App extends Component {
         }}
       >
         <Section title="Please leave feedback">
-        <>
-          <FeedbackOptions
-            onLeaveFeedback={this.handleReaction}
-            options={Object.keys(this.state)}
-          />
-        </>
-          
+          <>
+            <FeedbackOptions
+              onLeaveFeedback={this.handleReaction}
+              options={Object.keys(this.state)}
+            />
+          </>
+
         </Section>
 
         <Section title="Statistics">

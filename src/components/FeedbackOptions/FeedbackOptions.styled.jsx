@@ -6,28 +6,29 @@ export const Reaction = styled.div`
 `;
 
 export const Button = styled.button`
-    padding: 10px;
-    height: 40px;
-    width: 100px;
-    font-size: 22px;
-    font-weight: bold;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    width: 150px;
     text-transform: capitalize;
-    border: 1px solid grey;
-    border-radius: 5px;
-    outline: none;
-    text-align: center;
-    transition: transform 250ms linear;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
     cursor: pointer;
-
-
-    &:hover {
-    transform: scale(1.1);
-    background-color: brown;
-    color: white;
+    outline-offset: 4px;
+    &:active {
+        Span {
+        transform: translateY(-2px);
     }
-    :active {
-    background-color: brown;
+    }
+`;
+
+export const Span= styled.span`
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
     color: white;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    transform: translateY(-6px);
 `;
