@@ -6,7 +6,7 @@ export const Reaction = styled.div`
 `;
 
 export const Button = styled.button`
-    background: hsl(340deg 100% 32%);
+    background: ${props => props.color};
     border-radius: 12px;
     width: 150px;
     text-transform: capitalize;
@@ -28,7 +28,8 @@ export const Span= styled.span`
     padding: 12px 42px;
     border-radius: 12px;
     font-size: 1.25rem;
-    background: hsl(345deg 100% 47%);
+    background: ${props => props.color};
     color: white;
+    ${'' /* filter: grayscale(-80%); */}
     transform: translateY(-6px);
 `;
